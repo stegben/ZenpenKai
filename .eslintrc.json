@@ -1,4 +1,8 @@
 {
   "parser": "babel-eslint",
-  "extends": "yoctol"
+  "extends": "yoctol",
+  "env":{
+    "node": true,
+    "mocha": true
+  }
 }
