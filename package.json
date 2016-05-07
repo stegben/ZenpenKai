@@ -6,7 +6,8 @@
   "scripts": {
     "test-only": "mocha --compilers js:babel-register",
     "lint": "eslint .",
-    "test": "npm run lint && npm run test-only",
+    "coverage": "nyc --check-coverage --lines 90 --functions 95 npm run test-only",
+    "test": "npm run lint && npm run coverage",
     "build": "babel test -d test_public"
   },
   "repository": {
@@ -35,6 +36,7 @@
     "eslint-plugin-import": "^1.7.0",
     "eslint-plugin-jsx-a11y": "^1.2.0",
     "eslint-plugin-react": "^5.0.1",
+    "nyc": "^6.4.3",
     "react": "^15.0.2"
   },
   "dependencies": {
