@@ -1,0 +1,6 @@
+{
+  "name": "Zenpen Kai!",
+  "description": "React-based Zenpen (inspired by zenpen.io)",
+  "repository": "https://github.com/stegben/ZenpenKai",
+  "keywords": ["zenpen", "react"],
+}
