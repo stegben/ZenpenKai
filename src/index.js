@@ -7,7 +7,7 @@ import './index.css';
 class ZenPenKai extends React.Component {
   render() {
     return (
-      <h1 className="test">Hello Zen Pen</h1>
+      <h1 className="test">Hi Zen Pen</h1>
     );
   }
 }

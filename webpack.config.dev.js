@@ -4,6 +4,7 @@ const webpack = require('webpack');
 let config = require('./webpack.config.base');
 
 config.devtool = 'cheap-module-eval-source-map';
+config.output.publicPath = ''
 config.plugins = [
   new webpack.HotModuleReplacementPlugin(),
   new webpack.NoErrorsPlugin(),

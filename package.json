@@ -12,8 +12,8 @@
     "coverage": "nyc --check-coverage --lines 90 --functions 95 npm run test-only",
     "test": "npm run lint && npm run coverage",
     "build:prod": "rm -rf public && NODE_ENV=production webpack --config webpack.config.prod.js",
-    "start:dev": "npm test && NODE_ENV=development node devServer.js",
-    "start": "npm test && npm run build:prod && NODE_ENV=production node prodServer.js"
+    "start:dev": "npm test && NODE_ENV=development node run.js",
+    "start": "npm test && npm run build:prod && NODE_ENV=production node run.js"
   },
   "repository": {
     "type": "git",
