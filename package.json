@@ -8,7 +8,9 @@
     "lint": "eslint .",
     "coverage": "nyc --check-coverage --lines 90 --functions 95 npm run test-only",
     "test": "npm run lint && npm run coverage",
-    "start:dev": "npm test && NODE_ENV=development node devServer.js"
+    "build:prod": "rm -rf public && NODE_ENV=production webpack --config webpack.config.prod.js",
+    "start:dev": "npm test && NODE_ENV=development node devServer.js",
+    "start:prod": "npm test && npm run build:prod && NODE_ENV=production node prodServer.js"
   },
   "repository": {
     "type": "git",
@@ -41,6 +43,7 @@
     "eslint-plugin-jsx-a11y": "^1.2.0",
     "eslint-plugin-react": "^5.0.1",
     "express": "^4.13.4",
+    "extract-text-webpack-plugin": "^1.0.1",
     "mocha": "^2.4.5",
     "nyc": "^6.4.3",
     "react": "^15.0.2",
