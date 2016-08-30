@@ -14,7 +14,7 @@ cache:
 script:
   - npm run test
 
-deploy:
-  provider: heroku
-  api_key:
-    secure: ffd2b156-71d1-4dd5-9fde-c026bc5f0c4c
+# deploy:
+#   provider: heroku
+#   api_key:
+#     secure: ffd2b156-71d1-4dd5-9fde-c026bc5f0c4c
