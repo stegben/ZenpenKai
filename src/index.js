@@ -4,14 +4,14 @@ import ReactDom from 'react-dom';
 
 import Title from './components/title';
 
-import './index.css';
+import style from './index.css';
 
 class ZenPenKai extends React.Component {
   render() {
     return (
       <div>
         <Title />
-        <h1 className="test">Hi Zen Pen</h1>
+        <h1 className={style.test}>Hi Zen Pen</h1>
       </div>
     );
   }
