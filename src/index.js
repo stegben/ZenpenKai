@@ -9,9 +9,8 @@ import style from './index.css';
 class ZenPenKai extends React.Component {
   render() {
     return (
-      <div>
+      <div className={style.paper}>
         <Title />
-        <h1 className={style.test}>Hi Zen Pen</h1>
       </div>
     );
   }
